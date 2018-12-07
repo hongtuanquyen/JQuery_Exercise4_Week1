@@ -69,7 +69,6 @@ $(document).ready(function() {
 				}, 500)
 		}
     $(".js-list__products").on("swipeleft",function(){
-        $(this).slide
         moveRight();
     }); 
     $(".js-list__products").on("swiperight",function(){
