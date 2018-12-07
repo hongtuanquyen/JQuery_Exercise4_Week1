@@ -68,4 +68,12 @@ $(document).ready(function() {
 						$(item).css({pointerEvents: "auto"})
 				}, 500)
 		}
+    $(".js-list__products").on("swipeleft",function(){
+        
+        moveRight();
+    }); 
+    $(".js-list__products").on("swiperight",function(){
+        moveLeft();
+    }); 
 });
+

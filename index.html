@@ -5,35 +5,41 @@
 		<link rel="stylesheet" type="text/css" href="styles/jquery_ex4.css">
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<title>JS Exercise 4 Week 2</title>
 	</head>
 	<body>
-		<div class="wrapper js-wrapper">
-      <p class="title">Line up</p>
-      <div class="blockmenu">
-        <img class="js-menu" src="images/item_navi_01_sp_open.png" alt="Menu" />
-        <ul class="menu__list js-menu__list">
-            <li><img class="menu__item js-menu__item" src="images/item_navi_01_sp_open.png" alt="" /></li>
-            <li><img class="menu__item js-menu__item" src="images/item_navi_02_sp_close.png" alt="" /></li>
-            <li><img class="menu__item js-menu__item" src="images/item_navi_03_sp_close.png" alt="" /></li>
-            <li><img class="menu__item js-menu__item" src="images/item_navi_04_sp_close.png" alt="" /></li>
-            <li><img class="menu__item js-menu__item" src="images/item_navi_05_sp_close.png" alt="" /></li>
-        </ul>        
+    <div data-role="page" id="pageone">
+      <div data-role="main" class="ui-content">
+        <div class="wrapper js-wrapper">
+          <p class="title">Line up</p>
+          <div class="blockmenu">
+            <img class="js-menu" src="images/item_navi_01_sp_open.png" alt="Menu" />
+            <ul class="menu__list js-menu__list">
+                <li><img class="menu__item js-menu__item" src="images/item_navi_01_sp_open.png" alt="" /></li>
+                <li><img class="menu__item js-menu__item" src="images/item_navi_02_sp_close.png" alt="" /></li>
+                <li><img class="menu__item js-menu__item" src="images/item_navi_03_sp_close.png" alt="" /></li>
+                <li><img class="menu__item js-menu__item" src="images/item_navi_04_sp_close.png" alt="" /></li>
+                <li><img class="menu__item js-menu__item" src="images/item_navi_05_sp_close.png" alt="" /></li>
+            </ul>        
+          </div>
+          <div class="frame js-frame">
+            <ul class="list__products js-list__products">
+              <li class="list__item"><img src="images/item_01_sp.png" alt="Item 1" /></li>
+              <li class="list__item"><img src="images/item_02_sp.png" alt="Item 1" /></li>
+              <li class="list__item"><img src="images/item_03_sp.png" alt="Item 1" /></li>
+              <li class="list__item"><img src="images/item_04_sp.png" alt="Item 1" /></li>
+              <li class="list__item"><img src="images/item_05_sp.png" alt="Item 1" /></li>
+            </ul>
+          </div>
+          
+          <img class="arrow__left js-arrow__left" src="images/arrow_l_off.png" alt="Arrow Left" />
+          <img class="arrow__right js-arrow__right" src="images/arrow_r_off.png" alt="Arrow Right" />
+        </div>
       </div>
-      <div class="frame js-frame">
-        <ul class="list__products js-list__products">
-          <li class="list__item"><img src="images/item_01_sp.png" alt="Item 1" /></li>
-          <li class="list__item"><img src="images/item_02_sp.png" alt="Item 1" /></li>
-          <li class="list__item"><img src="images/item_03_sp.png" alt="Item 1" /></li>
-          <li class="list__item"><img src="images/item_04_sp.png" alt="Item 1" /></li>
-          <li class="list__item"><img src="images/item_05_sp.png" alt="Item 1" /></li>
-        </ul>
-      </div>
-      
-      <img class="arrow__left js-arrow__left" src="images/arrow_l_off.png" alt="Arrow Left" />
-      <img class="arrow__right js-arrow__right" src="images/arrow_r_off.png" alt="Arrow Right" />
-		</div>
-		<script src="js/jquery-3.3.1.min.js"></script>
+    </div>
 		<script src="js/bai4.js"></script>
 	</body>
 </html>
