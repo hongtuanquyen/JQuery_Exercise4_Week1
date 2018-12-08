@@ -70,9 +70,11 @@ $(document).ready(function() {
 		}
     $(".js-list__products").on("swipeleft",function(){
         moveRight();
+        timeOut(this);
     }); 
     $(".js-list__products").on("swiperight",function(){
         moveLeft();
+        timeOut(this);
     }); 
 });
 
