@@ -1,8 +1,10 @@
 .wrapper{
   position: relative;
+  max-width: 414px;
   border-top: 7px solid #ecd366;
   border-bottom: 7px solid #ecd366; 
   background: white;
+  margin: 0px auto;
 }
 
 .logo{
@@ -58,7 +60,6 @@
   margin-top: 22px;
   width: 320px;
   overflow: hidden;
-  touch-action: none;
 }
 
 .arrow__left{

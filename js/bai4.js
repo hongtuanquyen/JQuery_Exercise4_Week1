@@ -72,7 +72,7 @@ $(document).ready(function() {
     */
     function moveItem(offset) {
         var position = 360 * offset;
-        $(".js-list__products").animate({left: -position}, 500);        
+        $(".js-list__products").animate({left: -position}, 300);        
     }
 
     /*
@@ -84,7 +84,7 @@ $(document).ready(function() {
         $(item).css({pointerEvents: "none"});
         setTimeout(function(){
         $(item).css({pointerEvents: "auto"})
-        }, 500)
+        }, 300)
     }
 
     /*
