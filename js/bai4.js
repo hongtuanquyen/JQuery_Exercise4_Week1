@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(".js-menu").click(function() {
         $(".js-menu__list").show();
         timeOut(".js-menu");
-		});
+    });
 
     $(".js-menu__item").click(function(event) {
         var index = $(".js-menu__item").index($(this));
@@ -13,34 +13,34 @@ $(document).ready(function() {
         resetTimer();
         moveItem(index);
         timeOut(".js-menu__item");
-		});
+    });
 
     $(".js-arrow__left").click(function(event) {
         resetTimer();
         moveLeft();
         timeOut(".js-arrow__left");
         $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));
-		});
+    });
     
     $(".js-arrow__right").click(function() {
         resetTimer();
         moveRight();
         timeOut(".js-arrow__right");
-        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));      
-		});
+        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));
+    });
 
     $(".js-list__products").on("swipeleft", function(){
         resetTimer();
         moveRight();
         timeOut(this);
-        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));      
+        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));
     });
 
     $(".js-list__products").on("swiperight", function(){
         resetTimer();
         moveLeft();
         timeOut(this);
-        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));      
+        $(".js-menu").attr("src", $(".js-menu__item").eq(product).attr("src"));
     }); 
     
     /*
@@ -67,7 +67,7 @@ $(document).ready(function() {
     
     /*
       Move to the next item
-      @params: N/A
+      @params: offset
       @return: N/A
     */
     function moveItem(offset) {
@@ -83,7 +83,7 @@ $(document).ready(function() {
     function timeOut(item) {
         $(item).css({pointerEvents: "none"});
         setTimeout(function(){
-        $(item).css({pointerEvents: "auto"})
+            $(item).css({pointerEvents: "auto"})
         }, 300)
     }
 
@@ -98,7 +98,7 @@ $(document).ready(function() {
     }
 
     /*
-      Automate slide item
+      Auto slide item
       @params: N/A
       @return: N/A
     */    
